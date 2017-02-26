@@ -4,8 +4,6 @@ import dateutil.parser
 import datetime
 
 for line in sys.stdin:
-	#timestamp,sender,recipient = line.split()  #gives an error for large-etl file-'ValueError: too many values to unpack'
-	#if (len(words) > 3): print words
 	words = line.split()
 	timestamp = dateutil.parser.parse(words[0],ignoretz=True)
 	sender = words[1]
