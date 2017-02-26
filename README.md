@@ -35,6 +35,9 @@ Before running the code in AWS EMR, try running the python code locally in your 
 python Enron-Wordcount-Mapper-Details.py < part-000000 | python sort.py > temp0.out
 python Enron-Wordcount-Reducer.py < temp0.out > final0.out
 
+When the code is run in AWS EMR, the output of the mapper step is automatically shuffled and sorted before passed as input to the reducer job(s).  However when we run it locallyin the laptop, we need to sort it explicitly. could use the sort.py for that purposes.
+
+
 References
 https://www.tutorialspoint.com/python/time_strptime.htm
 
