@@ -37,6 +37,9 @@ python Enron-Wordcount-Reducer.py < temp0.out > final0.out
 
 When the code is run in AWS EMR, the output of the mapper step is automatically shuffled and sorted before passed as input to the reducer job(s).  However when we run it locallyin the laptop, we need to sort it explicitly. could use the sort.py for that purposes.
 
+# Athena
+I thought of checking the results of the Python Map Reduce scripts(read the Readme file to know more details on this), by querying the ETL results(several files) which is stored in AWS S3. Came across Athena - It is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Check out the Wiki page for details
+
 
 References
 https://www.tutorialspoint.com/python/time_strptime.htm
