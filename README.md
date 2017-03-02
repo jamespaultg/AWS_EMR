@@ -1,5 +1,4 @@
-# AWS_EMR
-Map Reduce 
+## AWS_EMR -Map Reduce 
 Learn to run a Map Reduce program(using Python) in the Amazon cloud EMR service
 
 We will use AWS EMR on the Enron email dataset:
